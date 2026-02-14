@@ -99,3 +99,31 @@ body{
   color: #0470b8;
   font-weight: 600;
 }
+
+@media  all and (max-width:690px) {
+  .bmi-container{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 690px) and (min-width:325px) {
+  body{
+    background-color: #fff;
+    align-items: center;  
+  }
+  .bmi-container{
+    flex-direction: column;
+    height: 100vh;
+    box-shadow: none;
+  }
+  .bmi-container .bmi-img{
+    width: 100%;
+    height: 300px;
+  }
+
+  .bmi-container .bmi-data{
+    width: 100%;
+    flex: 0;
+    padding: 0;
+  }
+}

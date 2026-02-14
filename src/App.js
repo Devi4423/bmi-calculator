@@ -38,6 +38,7 @@ function App() {
   }
 
   const clear = () => {
+    setError(false);
     setHeight("");
     setWeight("");
     setBmival(null);
