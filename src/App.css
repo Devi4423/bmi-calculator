@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-color: #010153;
+}
+
+.bmi-container{
+  width: 600px;
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.bmi-container .bmi-img{
+  width: 280px;
+  background-image: url('/public/assets/bmi-image.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bmi-container .bmi-data{
+  padding: 10px;
+  flex: 1;
+}
+
+.bmi-data .error{
+  color: red;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.bmi-data h1{
+  font-size: 20px;
+  font-weight: 500;
+  color: #0470b8;
+  margin-bottom: 10px;
+}
+
+.bmi-data .input-group{
+  margin-bottom: 15px;
+}
+
+.input-group label{
+  display: block;
+  margin-bottom:6px;
+  font-size: 18px;
+  color: #888;
+}
+
+.input-group input{
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.bmi-data button{
+  padding: 5px 10px;
+  border: none;
   color: white;
+  background-color: #0470b8;
+  margin-right: 10px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.bmi-data button.clear{
+  background-color: #d30303;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bmi-data .result{
+  border: 1px solid #0470b8;
+  padding: 10px;
+}
+
+.result p{
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.result p:first-child{
+  color: #0470b8;
+  font-weight: 600;
 }
